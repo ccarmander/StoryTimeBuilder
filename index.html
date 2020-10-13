@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titlE>StoryFinder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand ">
+            <a id="story-finder" href=index.html style="color:white;">StoryFinder</a>
+        </div>
+    </nav>
+
+    <figure class="image is-fullwidth is-3by1 pb-4">
+        <img id="main" src="assets/animals-2739386_1920.jpg">
+    </figure>
+
+    <div class="container">
+
+        <div id="question-one">
+            <h1>What kind of story do you want to tell?</h1>
+            <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
+                <div class="column">
+                    <div class="card quote" data-author="Charlie%20Sheen">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src="assets/restful.jpg" alt="Cabin in the woods">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                A restful Charlie Sheen tale.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card quote" data-author="Norm%20MacDonald">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src="assets/comedy.jpg" alt="Mic on stage">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                A 1920's Norm MacDonald lengthy comedy.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card quote" data-author="Gwyneth%20Paltrow">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src="assets/morality_tale.jpg" alt="Crossroads">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                A Gwyneth Paltrow morality tale.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card quote" data-author="Katherine%20Heigl">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src="assets/tragedy.jpg" alt="Candles in a row">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                A Katherine Heigl fall-from-grace tragedy.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <progress class="progress is-info" value="25" max="100">25%</progress>
+        </div>
+
+
+        <div id="question-two" style="display: none;">
+            <h1>How many characters do you want in your story</h1>
+            <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
+                <div class="column">
+                    <div class="card num" data-number="3">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src="assets/threePeople.jpg" alt="Three people">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                I am spartan like Earnest Hemmingway. 3 characters, at most.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card num" data-number="4">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src="assets\shrekish.jpg" alt="Four People">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                The protaganist, the friend, the love-interest and the villain. The "Shrek" option.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card num" data-number="8">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src="assets/crowd.jpg" alt="Crowd">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                I am a maniac like Thomas Pynchon. Sky's the limit!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <progress class="progress is-info" value="50" max="100">50%</progress>
+        </div>
+
+
+        <div id="question-three" style="display: none;">
+            <div class="field">
+                <label class="label">One word to describe the main character.</label>
+                <div class="control">
+                    <input id="main-word" class="input" type="text" placeholder="e.g Courageous">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">One word to describe your story.</label>
+                <div class="control">
+                    <input id="story-word" class="input" type="text" placeholder="e.g Classic">
+                </div>
+            </div>
+            <div class="field is-grouped">
+                <p class="control">
+                    <a id="go-back" class="button is-primary">
+                        Go Back
+                    </a>
+                </p>
+                <p class="control">
+                    <a id="story-btn" class="button is-primary">
+                        Get my story elements
+                    </a>
+                </p>
+            </div>
+            <br>
+            <br>
+            <progress class="progress is-info" value="75" max="100">75%</progress>
+        </div>
+
+        <div id="final-story" class="columns mx-1" style="display: none;">
+            <div class="column">
+                <div class="columns">
+                    <div class="column ">
+                        <div class="card">
+                            <header class="card-header has-background-info has-text-centered">
+                                <h1 class="title">Characters Details</h1>
+                            </header>
+                            <div>
+                                <div class="card-content">
+                                    <div id="dramatis-personae" class="content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <header class="card-header has-background-info has-text-centered">
+                                <h1 class="title">Story Details</h1>
+                            </header>
+                            <div>
+                                <div class="card-content">
+                                    <div id="scene" class="content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card ">
+                        <header class="card-header has-background-primary has-text-centered">
+                            <h1 class="title">Story Block</h1>
+                        </header>
+                        <div id="story-block">
+                            <div class="card-content">
+                                <div id="opening-line" class="content">
+                                </div>
+                                <hr>
+                            </div>
+                            <div id="end" class="card-content" style="display:none">
+                                <p id="get-writing" class="is-size-3">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <progress class="progress is-info" value="100" max="100">100%</progress>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section class="hero is-dark">
+            <div class="hero-body">
+                <div class="containter">
+                    <div class="content has-text-centered ">
+                        <p>
+                            <strong>StoryFinder</strong>
+                            Copyright © 2020 Group 5 All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="required" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head has-background-primary">
+                    <p class="modal-card-title">Question Three</p>
+                </header>
+                <section class="modal-card-body">
+                    Hmmmm..... Looks like you forgot to fill in all of the required boxs. Try going back and making sure
+                    your story will be complete!
+                </section>
+                <footer class="modal-card-foot">
+                    <button id="validation" class="button is-success">Go Back</button>
+                </footer>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head has-background-primary">
+                    <p class="modal-card-title">Unexpected Error</p>
+                </header>
+                <section class="modal-card-body">
+                    Whoops! Looks like we had an issue on our end, but you can always try again.
+                </section>
+                <footer class="modal-card-foot">
+                    <button id="restart" class="button is-success" onclick="window.location.href='index.html'">Try Again!</button>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" &gt;&lt;></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
